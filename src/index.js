@@ -1,6 +1,6 @@
-import Style from './another.js';
+import CreateModule from './ProjectCreateModule.js';
+import UpdateModule from './ProjectUpdateModule.js';
+import TodoCreate from './TodoCreateModule.js';
+import TodoUpdate from './TodoUpdateModule.js';
 
-console.log(Style());
-const a=5;
-console.log(a*7);
-const content=document.querySelector('#content').innerText='a';
+// main file that will connect all of the modules functionality
