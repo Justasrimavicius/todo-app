@@ -12,6 +12,7 @@ Nice to have:
 2) Additional functionality(will probably think of some while doing the project).
 
 Steps(documentation on what i am doing, how long it took and what my next steps are):
-First commit ~1hour  1) environment setup(webpack and all of the magic of it). Took some time - had to read some of the documentation again.
+First commit ~1hour  1) Environment setup(webpack and all of the magic of it). Took some time - had to read some of the documentation again.
 Second commit 10mins 2) Figuring out the js file imports and exports, creating multiple js files and thinking of the funcionality that they will have(try to follow SOLID principles).(MIGHT NEED A DOM UPDATE MODULE)
-3) Creating the CSS file and layering everything out in the index.js file(later on will put everything in its own place).
+third commit ~1hour  3) Creating the CSS file and layering everything out in the index.js file(later on will put everything in its own place).
+4) ProjectManipulationModule functionality - project creation and project deletion(only inside of an array), giving the signal to DOMUpdateModule for DOM updating.
