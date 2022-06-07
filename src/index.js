@@ -5,11 +5,25 @@ import TodoStyle from './TodoStyle.css'
 import ProjectManipulate from './modules/ProjectManipulationModule.js';
 import DOMUpdate from './modules/DOMUpdateModule.js';
 import TodoCreate from './modules/TodoCreateModule.js';
-import TodoUpdate from './modules/TodoUpdateModule.js';
+import TodoLoad from './modules/TodoLoadModule.js';
 
 // TESTING FIELD(easier to use console.log() to check if everything works fine)
+// projects.forEach(element=>{
+//     element.addEventListener('click',function(){ // Call the modules if a project is clicked on the left side(load up the todos of that project)
+
+        
+    
+    
+    
+//     });
+// })
 
 
+document.querySelector('#add-todo').addEventListener('click',function(){
+
+
+
+});
 // TESTING FIELD
 
 
@@ -18,12 +32,10 @@ import TodoUpdate from './modules/TodoUpdateModule.js';
 
 let projectArray=[];
 
-document.querySelector('#project-add').addEventListener('click',function(){
+document.querySelector('#project-add').addEventListener('click',function(){ // Call the modules if Add Project button is clicked and value(name) of the project is defined
     if(document.querySelector('#project-add-input').value!=''){
         ProjectManipulate(projectArray);
         DOMUpdate(projectArray);
     }
-
 });
 
-// main file that will connect all of the modules functionality

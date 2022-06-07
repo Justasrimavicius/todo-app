@@ -24,14 +24,32 @@
     font-size: 1rem;
 }
 #todo-btn:hover{
-    background-color: rgb(189, 230, 184);
+    background-color: rgb(189, 255, 233);
     transform: scale(0.98);
 }
 #todo-btn:focus{
-    background-color: rgb(158, 231, 155);
+    background-color: rgb(135, 211, 191);
 }
 .todo>p{
     width: 90%;
     font-size: 1.15rem;
     padding: 10px;
+}
+#add-todo{
+    width: 40%;
+    border: none;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#add-todo:hover{
+    background-color: rgb(189, 255, 233);
+    transform: scale(0.98);
+}
+#add-todo:focus{
+    background-color: rgb(135, 211, 191);
+}
+#add-todo-input{
+    width: 40%;
 }

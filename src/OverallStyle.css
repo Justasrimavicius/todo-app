@@ -28,7 +28,7 @@ body{
 }
 #project-add{
     width: 75%;
-    height: 7%;
+    min-height: 7%;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@ body{
 }
 #project-add:hover{
     background-color: rgb(189, 230, 184);
-
+    transform: scale(0.98);
 
 }
 #project-add:focus{

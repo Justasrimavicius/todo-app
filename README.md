@@ -17,3 +17,4 @@ Second commit 2) Figuring out the js file imports and exports, creating multiple
 third commit  3) Creating the CSS file and layering everything out in the index.js file(later on will put everything in its own place).
 fourth commit 4) ProjectManipulationModule functionality - project creation and project deletion(only inside of an array), giving the signal to DOMUpdateModule for DOM updating.(PROJECT DELETION LATER ON - CANT DO IT NOW WITHOUT DOM UPDATES)
 fifth commit  5) Updating DOMUpdateModule.js to push in a new element, when an array from ProjectManipulationModule gets updated(could not find an easy way to listen to array/function return value changes, so just added an event listener on the project creation button in index.js and called the modules after that)
+sixth commit 6) Updating DOMUpdateModule.js to load the todos of a selected project(not sure if works perfectly - need to create todo creation functionality to test it)
