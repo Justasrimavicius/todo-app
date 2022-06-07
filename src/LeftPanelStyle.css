@@ -26,3 +26,8 @@ h3{
     transform: scale(1.1);
     color: rgb(99, 124, 104);
 }
+#project-add-input{
+    border: none;
+    margin: 10px;
+    width: 75%;
+}
