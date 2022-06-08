@@ -19,3 +19,4 @@ fourth commit  4) ProjectManipulationModule functionality - project creation and
 fifth commit   5) Updating DOMUpdateModule.js to push in a new element, when an array from ProjectManipulationModule gets updated(could not find an easy way to listen to array/function return value changes, so just added an event listener on the project creation button in index.js and called the modules after that)
 sixth commit   6) Updating DOMUpdateModule.js to load the todos of a selected project(not sure if works perfectly - need to create todo creation functionality to test it)
 seventh commit 7) fixed last commits work(still not sure if it works - need to create todo creation functionality to test it)
+eigth commit   8) Fixed a bug, where currentProject wouldn't get returned properly from DOMUpdateModule to index.js. Next: continue with TodoCreateModule

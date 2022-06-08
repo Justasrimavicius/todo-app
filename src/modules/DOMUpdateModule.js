@@ -3,12 +3,11 @@
 
 
 
-export default function UpdateModule(projectArray,currentProject,TodoLoad){
-
+export default function UpdateModule(projectArray,todosField,projectButtonClick){
+let currentProject;
 // Updates the HTML file when it gets called in index.js
-
     const projectDiv=document.getElementById('projects');
-    let todosField;
+
 
 
         projectArray.forEach((element,index) => {
@@ -17,51 +16,24 @@ export default function UpdateModule(projectArray,currentProject,TodoLoad){
                 const projectButton=document.createElement('button');
                 projectButton.classList.add('project-left');
                 projectButton.innerText=element.name;
-                projectButton.dataset.index=`${index}`;
+                projectButton.dataset.name=`${element.name}`;
 
-                projectButton.addEventListener('click',function(){
-
-                    const allTodos=document.querySelectorAll('.todo');
-                    allTodos.forEach(todoElement=>{
-                        todoElement.remove();
-                    });
-                    projectArray.forEach(arrayElement=>{
-                        if(arrayElement.name==projectButton.innerHTML){
-                            console.log('found it');
-                        }
-                    });
-                    currentProject=projectButton.dataset.index; // For TodoLoad and Project tab deletion
-                    todosField=TodoLoad(projectArray,currentProject);
-                });
+                projectButton.addEventListener('click',projectButtonClick); // this function sits in index.js
 
                 projectDiv.append(projectButton);
             }else{
                 const projectButton=document.createElement('button');
                 projectButton.classList.add('project-left');
                 projectButton.innerText=element.name;
-                projectButton.dataset.index=`${index}`;
+                projectButton.dataset.name=`${element.name}`;
 
-                projectButton.addEventListener('click',function(){
-
-                    const allTodos=document.querySelectorAll('.todo');
-                    allTodos.forEach(todoElement=>{
-                        todoElement.remove();
-                    });
-                    projectArray.forEach(arrayElement=>{
-                        if(arrayElement.name==projectButton.innerHTML){
-                            console.log('found it');
-                        }
-                    });
-                    currentProject=projectButton.dataset.index; // For TodoLoad and Project tab deletion
-                    todosField=TodoLoad(projectArray,currentProject);
-                });
+                projectButton.addEventListener('click',projectButtonClick); // this fucntion sits in index.js
 
                 projectDiv.append(projectButton);
             }
 
         });
 
-
-        return projectDiv,todosField;
+        return {projectDiv,todosField,currentProject};
 
 };

@@ -8,21 +8,23 @@ export default function ProjectManipulate(projectArray){
 // Somehow give a signal to the DOMUpdateModule to update the DOM
 
 // Project add functionality - updates the project array when gets called in index.js(when the project create button gets clicked)
-const addProjectBtn=document.getElementById('project-add');
 const addProjectInput=document.getElementById('project-add-input');
 
 
 
-function ProjectConsctructor(name){
+function Project(name){
     this.name=name;
     this.creationDate=`${(new Date().getFullYear())} ${(new Date().getMonth())+1} ${(new Date().getDate())}`;
     this.todoList=[];
 }
 
 
-projectArray.push(new ProjectConsctructor(`${addProjectInput.value}`));
+projectArray.push(new Project(`${addProjectInput.value}`));
 addProjectInput.value='';
+
 console.log(projectArray);
+
+
 return projectArray;
 
 
