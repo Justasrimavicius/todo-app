@@ -1,11 +1,9 @@
-// Module for updating projects information
+// Module for updating the HTML when creating a new project
 
 
 
 
 export default function UpdateModule(projectArray,todosField,projectButtonClick){
-let currentProject;
-// Updates the HTML file when it gets called in index.js
     const projectDiv=document.getElementById('projects');
 
 
@@ -34,6 +32,6 @@ let currentProject;
 
         });
 
-        return {projectDiv,todosField,currentProject};
+        return {projectDiv,todosField};
 
 };
