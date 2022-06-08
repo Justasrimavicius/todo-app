@@ -16,7 +16,7 @@ function ProjectButtonClick(){
         todoElement.remove();
     });
     currentProject=this.dataset.name; // For TodoLoad and Project tab deletion
-    // TodoLoad(projectArray,currentProject,todosField);
+    TodoLoad(projectArray,currentProject,todosField);
     console.log(currentProject);
 };
 
@@ -40,10 +40,8 @@ document.querySelector('#project-add').addEventListener('click',function(){ // C
     }
 });
 
-document.querySelector('#add-todo').addEventListener('click',function(){ // Call the modules if a project is clicked on the left side(load up the todos of that project)
-    // field=TodoCreate(currentProject,projectArray);
-    // document.getElementById('todos').innerHTML=field; Doesnt work, because currentProject gets back undefined in DOMUpdateModule(it gets its value only when click event listener gets called, but the function
-    // returns the value sooner than that)
+document.getElementById('add-todo').addEventListener('click',function(){
+    TodoCreate(currentProject,projectArray);
 
 
 });

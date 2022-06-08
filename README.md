@@ -20,3 +20,5 @@ fifth commit   5) Updating DOMUpdateModule.js to push in a new element, when an 
 sixth commit   6) Updating DOMUpdateModule.js to load the todos of a selected project(not sure if works perfectly - need to create todo creation functionality to test it)
 seventh commit 7) fixed last commits work(still not sure if it works - need to create todo creation functionality to test it)
 eigth commit   8) Fixed a bug, where currentProject wouldn't get returned properly from DOMUpdateModule to index.js. Next: continue with TodoCreateModule
+ninth commit  10) Main functionality works - project creation, todo creation, going between projects and loading each projects todos.
+11) project delete and todo delete
