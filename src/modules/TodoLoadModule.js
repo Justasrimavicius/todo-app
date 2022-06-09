@@ -1,6 +1,6 @@
 // Module for updating todos information
 
-export default function TodoLoad(projectArray,currentProject,todosField){
+export default function TodoLoad(projectArray,currentProject,todosField,TodoDelete){
 
 // currentProject - name in the projectArray of the project that needs its todos to be loaded
     projectArray.forEach((element,index)=>{
@@ -16,6 +16,7 @@ export default function TodoLoad(projectArray,currentProject,todosField){
                 let todoBtn=document.createElement('button');
                 todoBtn.innerText='Clear';
                 todoBtn.setAttribute('id','todo-btn');
+                todoBtn.addEventListener('click',()=>TodoDelete(currentProject,projectArray,todoBtn));
 
                 todoDiv.append(todoText,todoBtn);
                 todosField.insertBefore(todoDiv,document.getElementById('add-todo-input'));

@@ -7,7 +7,7 @@ import DOMUpdate from './modules/DOMUpdateModule.js';
 import TodoCreate from './modules/TodoCreateModule.js';
 import TodoLoad from './modules/TodoLoadModule.js';
 import ProjectDelete from './modules/ProjectDeleteModule.js';
-
+import TodoDelete from './modules/TodoDeleteModule.js';
 
 function ProjectButtonClick(){ // This gets called in DOMUpdate when a project gets clicked on - it loads the todos of that project
 
@@ -16,7 +16,7 @@ function ProjectButtonClick(){ // This gets called in DOMUpdate when a project g
         todoElement.remove();
     });
     currentProject=this.dataset.name;
-    TodoLoad(projectArray,currentProject,todosField);
+    TodoLoad(projectArray,currentProject,todosField,TodoDelete);
 };
 
 let todosField=document.getElementById('todos');
@@ -31,5 +31,6 @@ document.querySelector('#project-add').addEventListener('click',function(){ // C
 });
 
 document.getElementById('add-todo').addEventListener('click',function(){
-    TodoCreate(currentProject,projectArray);
+    TodoCreate(currentProject,projectArray,TodoDelete);
 });
+document.getElementById('project-delete').addEventListener('click',()=>ProjectDelete(currentProject,projectArray));

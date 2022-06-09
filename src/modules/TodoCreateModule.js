@@ -1,6 +1,6 @@
 // Module for creating todos inside of a project
 
-export default function TodoCreate(currentProject,projectArray){
+export default function TodoCreate(currentProject,projectArray,TodoDelete){
     projectArray.forEach((element,index) => {
         
         if(element.name==currentProject){
@@ -13,6 +13,7 @@ export default function TodoCreate(currentProject,projectArray){
 
             let todoBtn=document.createElement('button');
             todoBtn.innerText='Clear';
+            todoBtn.addEventListener('click',()=>TodoDelete(currentProject,projectArray,todoBtn));
             todoBtn.setAttribute('id','todo-btn');
             
             todoDiv.append(todoText,todoBtn);

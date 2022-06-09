@@ -22,3 +22,4 @@ seventh commit 7) fixed last commits work(still not sure if it works - need to c
 eigth commit   8) Fixed a bug, where currentProject wouldn't get returned properly from DOMUpdateModule to index.js. Next: continue with TodoCreateModule
 ninth commit   9) Main functionality works - project creation, todo creation, going between projects and loading each projects todos.
 tenth commit  10) Messed some code up, had to go back to the last commit. Cleaned the code up a little bit, added some comments. Project deletion functionality next.
+eleventh commit 11) main functionality done - i am able to create projects, delete projects, add todos to those projects and delete the todos.
